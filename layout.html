@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        header {
+            padding: 50px;
+        }
+        header, nav, main>section, footer{
+             background-color: #e7e9eb
+
+        }
+
+        header>p,
+        nav>p, main>section>p , footer>p {
+            text-align: center;
+        }
+
+        nav {
+            padding: 10px;
+            margin: 5px 0px;
+        }
+        main{
+            display: flex;
+            padding: 5px;
+            gap:10px;
+        }
+        
+        main>section{
+            padding: 50px;
+            flex: 1;
+            gap:10px;
+        }
+        main>section.sidesection{
+            width: 40px;
+        }
+      footer{
+        margin-top: 5px;
+        padding: 20px;
+      }
+      @media(max-width:700px){
+        main{
+            display: flex;
+            flex-direction: column;
+
+      }
+     main>section.sidesection{
+        width: 100%;
+     }
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Header</p>
+
+    </header>
+    <nav>
+        <p>Navogation Menu</p>
+    </nav>
+    <main>
+        <section class="sidesection">
+            <p>Content</p>
+        </section>
+        <section>
+            <p>Main Content</p>
+        </section>
+        <section  class="sidesection">
+            <p>Content</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>
